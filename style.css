@@ -100,3 +100,55 @@ textarea { height: 150px; resize: none; }
 
 /* --- Footer --- */
 footer { text-align: center; padding: 20px; color: var(--text-secondary); font-size: 0.9rem; font-family: monospace; }
+/* --- Mobile Menu Styles (Add to bottom of style.css) --- */
+
+/* Initially hide the hamburger on desktop */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: var(--accent);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Mobile Screens Only */
+@media (max-width: 768px) {
+    /* Show the hamburger */
+    .hamburger { display: block; }
+
+    /* Hide the hamburger's active state (X shape) */
+    .hamburger.active .bar:nth-child(2) { opacity: 0; }
+    .hamburger.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    .hamburger.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+    /* The Sliding Menu Overlay */
+    .nav-links {
+        position: fixed;
+        left: -100%; /* Hidden off-screen to the left */
+        top: 70px; /* Below the navbar */
+        gap: 0;
+        flex-direction: column;
+        background-color: var(--light-bg);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        padding: 20px 0;
+    }
+
+    /* When menu is active, slide it in */
+    .nav-links.active {
+        left: 0;
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+}
+
