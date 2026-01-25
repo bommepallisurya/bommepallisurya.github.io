@@ -12,6 +12,32 @@
 body { background: var(--bg-color); color: var(--text-primary); line-height: 1.6; }
 html { scroll-behavior: smooth; }
 
+/* --- Global Link Fix --- */
+a {
+    color: var(--accent); /* Sets links to your Teal color (#64ffda) */
+    text-decoration: none; /* Removes the underline (optional) */
+    transition: 0.3s;
+    position: relative;
+    font-weight: 500;
+}
+
+a:hover {
+    color: var(--white); /* Turns White when you hover */
+    text-decoration: underline; /* Adds underline on hover for clarity */
+}
+
+/* Specific fix for the Contact Info in Hero Section */
+.hero-content p a {
+    color: var(--accent) !important;
+    font-family: 'Fira Code', monospace;
+}
+
+/* Specific fix for the "Or email directly" link in Contact Section */
+#contact p a {
+    color: var(--accent) !important;
+    font-weight: bold;
+}
+
 /* --- Navigation --- */
 nav { 
     display: flex; justify-content: space-between; align-items: center; 
@@ -151,4 +177,5 @@ footer { text-align: center; padding: 20px; color: var(--text-secondary); font-s
         margin: 20px 0;
     }
 }
+
 
