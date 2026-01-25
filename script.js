@@ -19,3 +19,12 @@ document.getElementById('contact-form').addEventListener('submit', function(even
             console.error('EmailJS Error:', err);
         });
 });
+// Toggle Mobile Menu
+function toggleMenu() {
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-links");
+
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+
