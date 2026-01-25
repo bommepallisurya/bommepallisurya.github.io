@@ -12,6 +12,8 @@
 body { background: var(--bg-color); color: var(--text-primary); line-height: 1.6; }
 html { scroll-behavior: smooth; }
 
+/* --- Navigation --- */
+
 /* --- Global Link Fix --- */
 a {
     color: var(--accent); /* Sets links to your Teal color (#64ffda) */
@@ -37,8 +39,6 @@ a:hover {
     color: var(--accent) !important;
     font-weight: bold;
 }
-
-/* --- Navigation --- */
 nav { 
     display: flex; justify-content: space-between; align-items: center; 
     padding: 20px 50px; background: rgba(10, 25, 47, 0.95); 
@@ -177,5 +177,6 @@ footer { text-align: center; padding: 20px; color: var(--text-secondary); font-s
         margin: 20px 0;
     }
 }
+
 
 
