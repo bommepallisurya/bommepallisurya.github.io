@@ -17,17 +17,26 @@
 <body>
 
     <!-- Navigation -->
-    <nav>
-        <div class="logo">Sai<span class="highlight">.AI</span></div>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Tech Stack</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#credentials">Credentials</a></li>
-            <li><a href="#contact" class="btn-highlight">Hire Me</a></li>
-        </ul>
-    </nav>
+<nav>
+    <div class="logo">Sai<span class="highlight">.AI</span></div>
+    
+    <!-- The Menu Links -->
+    <ul class="nav-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#skills" onclick="toggleMenu()">Tech Stack</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()" class="btn-highlight">Hire Me</a></li>
+    </ul>
+
+    <!-- The Hamburger Button (Visible only on mobile) -->
+    <div class="hamburger" onclick="toggleMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+</nav>
+
 
     <!-- Hero Section -->
     <header id="home">
@@ -304,3 +313,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
