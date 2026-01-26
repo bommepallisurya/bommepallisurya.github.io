@@ -1,30 +1,28 @@
-// Initialize EmailJS is handled in HTML head
-// Handle Form Submission
 document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent default form reload
-
+    event.preventDefault();
     const btn = this.querySelector('button');
+    const originalText = btn.innerText;
     btn.innerText = 'Sending...';
 
-    // Send the email using EmailJS
-    // REPLACE 'service_id' and 'template_id' with your actual IDs
-    emailjs.sendForm('service_0kx931g', 'template_h0no3vd', this)
+    const serviceID = 'service_0kx931g';
+    const notificationTemplateID = 'template_h0no3vd'; // Template 1 (To You)
+    const autoReplyTemplateID = 'template_3i3n2nb';     // Template 2 (To User)
+
+    // 1. Send Notification to YOU
+    emailjs.sendForm(serviceID, notificationTemplateID, this)
         .then(() => {
+            // 2. Send Auto-Reply to USER
+            // We use sendForm again because it contains the 'user_email' field they entered
+            emailjs.sendForm(serviceID, autoReplyTemplateID, this);
+            
+            // Success UI
             btn.innerText = 'Sent!';
-            alert('Message sent successfully!');
-            this.reset(); // Clear form
+            alert('Message sent successfully! Check your inbox for a confirmation.');
+            this.reset();
+            setTimeout(() => btn.innerText = originalText, 3000);
         }, (err) => {
-            btn.innerText = 'Send Message';
+            btn.innerText = originalText;
             alert('Failed to send. Please try again.');
             console.error('EmailJS Error:', err);
         });
 });
-// Toggle Mobile Menu
-function toggleMenu() {
-    const hamburger = document.querySelector(".hamburger");
-    const navMenu = document.querySelector(".nav-links");
-
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-}
-
