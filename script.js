@@ -1,6 +1,6 @@
 // ============ EMAILJS ============
 (function () {
-    emailjs.init("YOUR_PUBLIC_KEY");
+    emailjs.init("0iP2L2hOPcBbc7vmC");
 })();
 
 // ============ CONTACT FORM ============
