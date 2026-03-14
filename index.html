@@ -1,315 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sai Bommepalli|AI Engineer</title>
-    <link rel="stylesheet" href="style.css">
-
-    <!-- EmailJS SDK -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            emailjs.init("0iP2L2hOPcBbc7vmC");
-        })();
-    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sai Surya Teja — AI Engineer & Researcher</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>(function(){ emailjs.init("YOUR_PUBLIC_KEY"); })();</script>
 </head>
 <body>
 
-    <!-- Navigation -->
-
-    <nav>
+<!-- NAV -->
+<nav id="navbar">
     <div class="nav-container">
-        <!-- Everything else stays the same inside here -->
-        <div class="logo">Sai Bommepalli</div>
-        <ul class="nav-links">
+        <a href="#hero" class="logo">Sai<span>.</span></a>
+        <ul class="nav-links" id="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Tech Stack</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#credentials">Credentials</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#certifications">Certs</a></li>
             <li><a href="#contact" class="btn-highlight">Hire Me</a></li>
         </ul>
-        <div class="hamburger" onclick="toggleMenu()">...</div>
+        <div class="hamburger" id="hamburger">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </div>
     </div>
-    </nav>
+</nav>
 
-    <!-- Hero Section -->
-<header id="home">
-    <div class="hero-container">
-        <!-- Left Side: Text -->
+<!-- HERO -->
+<header id="hero">
+    <div class="hero-bg-glow"></div>
+    <div class="hero-container reveal">
         <div class="hero-content">
-            <p class="greeting">Hi, I am</p>
-            <h1>Sai Surya Teja Reddy</h1>
-            <h2 class="typing-text">AI Engineer & Agentic Workflow Specialist.</h2>
-            <p class="bio">
-                Specialized in building <strong>Enterprise RAG Pipelines</strong>, <strong>Generative AI</strong>, and <strong>Explainable AI (XAI)</strong>. 
-                Currently architecting AI agents at <strong>Volvo Financial Services</strong>.
-            </p>
+            <span class="greeting">> Hello, World! 👋</span>
+            <h1>Sai Surya Teja</h1>
+            <h2>I build <span id="typed-text" class="typed-accent"></span><span class="cursor">|</span></h2>
+            <p class="bio">AI Engineer at <strong>Volvo Financial Services</strong> — designing enterprise GenAI systems with RAG pipelines, LLM evaluation, and Explainable AI. I turn complex AI research into production-ready systems that actually work.</p>
             <div class="hero-btns">
-                <a href="resume.pdf" target="_blank" class="btn">View Resume</a>
-                <a href="#contact" class="btn btn-outline">Contact Me</a>
+                <a href="#projects" class="btn">View My Work</a>
+                <a href="resume.pdf" class="btn btn-outline" target="_blank">Download Resume ↓</a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/YOUR_HANDLE" target="_blank" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                </a>
+                <a href="https://linkedin.com/in/YOUR_HANDLE" target="_blank" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </a>
+                <a href="mailto:your@email.com" aria-label="Email">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                </a>
             </div>
         </div>
-
-        <!-- Right Side: Your Image -->
         <div class="hero-image">
-            <img src="portfolio.jpeg" alt="Sai Surya Teja Reddy">
-            <!-- Optional: A decorative shape behind the image -->
+            <img src="profile.jpg" alt="Sai Surya Teja" />
             <div class="image-border"></div>
+            <div class="image-glow"></div>
         </div>
     </div>
 </header>
 
-    <!-- About Section -->
-    <section id="about">
-        <h3>About Me</h3>
-        <p>
-I’m an AI Engineer and Researcher specializing in Generative AI, RAG pipelines, agentic workflows, and Explainable AI (XAI). I currently work at Volvo Financial Services, where I design enterprise-grade GenAI systems using Microsoft Azure AI Foundry — building RAG pipelines with guardrails, observability, and evaluation metrics to improve reliability and reduce hallucinations.
-
-My research work includes building a Concept-Validated Explanation Framework that measures fidelity, stability, and causal adherence of machine-learning explanations, benchmarked against SHAP and LIME. I’ve also built interactive analytics tools like a COVID-19 Dashboard using Plotly and Dash.
-
-I was a Runner-Up at the CEO BIG BOOST BAR for pitching an AI grocery assistant (“NEST”) to investors, and I hold certifications in Microsoft Azure Foundry (AI Agents), Microsoft AI Fundamentals, and UiPath RPA Developer Associate.
-
-I’m passionate about translating complex AI systems into reliable, production-ready solutions that create real business value.
-        </p>
-        <p>
-            <strong>Focus:</strong> Generative AI, RAG Architectures, LLM Evaluation, and Explainable AI (XAI) —
-            building systems that are reliable, observable, and safe.
-        </p>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience">
-        <h3>Professional Experience</h3>
-        <div class="timeline">
-
-            <!-- Job 1 -->
-            <div class="timeline-item">
-                <div class="timeline-date">Sep 2025 - Present</div>
-                <div class="timeline-content">
-                    <h4>AI Engineer | Azure AI & Agentic Workflow Specialist</h4>
-                    <span class="company">Volvo Financial Services</span>
-                    <ul>
-                        <li>Architected GenAI solutions on <strong>Microsoft Azure AI Foundry</strong>, building <strong>RAG pipelines</strong> with strict guardrails for enterprise compliance.</li>
-                        <li>Designed RAG pipelines with <strong>document preprocessing</strong>, <strong>embeddings</strong>, and <strong>retrieval validation</strong>.</li>
-                        <li>Engineered <strong>observability and feedback loops</strong> to minimize hallucinations using advanced prompt strategies and evaluation metrics.</li>
-                        <li>Developed complex <strong>SQL queries</strong> from scratch to power data pipelines and business intelligence dashboards.</li>
-                        <li>Integrated logging/observability hooks to monitor LLM behavior and failure patterns.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Job 2 -->
-            <div class="timeline-item">
-                <div class="timeline-date">Jan 2025 - Present</div>
-                <div class="timeline-content">
-                    <h4>Student Analyst (Part-time)</h4>
-                    <span class="company">UNCG Information Technology Services</span>
-                    <ul>
-                        <li>Troubleshot and configured cross-platform issues (Windows/macOS/Linux) and enterprise apps (Citrix, VPNs) supporting productivity.</li>
-                        <li>Utilized <strong>ServiceNow</strong> for incidents and requests, achieving a <strong>40% reduction in resolution time</strong> via proactive triage and escalations.</li>
-                        <li>Created and maintained audit-ready documentation to reduce troubleshooting time and support knowledge sharing across teams.</li>
-                        <li>Collaborated in an agile support environment aligned with audit and compliance requirements.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Job 3 -->
-            <div class="timeline-item">
-                <div class="timeline-date">Jun 2022 - Jul 2024</div>
-                <div class="timeline-content">
-                    <h4>Product Analyst</h4>
-                    <span class="company">D-MAX Solutions</span>
-                    <ul>
-                        <li>Executed data analysis using <strong>Python & SQL</strong>, identifying process inefficiencies to inform business decisions.</li>
-                        <li>Developed interactive dashboards to monitor KPIs and streamline access to insights.</li>
-                        <li>Spearheaded initiatives resulting in a <strong>25% reduction</strong> in processing time (operational improvement mindset).</li>
-                    </ul>
-                </div>
-            </div>
-
+<!-- STATS STRIP -->
+<div class="stats-strip reveal">
+    <div class="stats-container">
+        <div class="stat-item">
+            <div><span class="stat-number" data-target="3">0</span><span class="stat-suffix">+</span></div>
+            <p>Years in AI/ML</p>
         </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <h3>Technical Arsenal</h3>
-        <div class="skills-grid">
-
-            <div class="skill-category">
-                <h4>AI & GenAI</h4>
-                <div class="tags">
-                    <span>Azure AI Agents (Agentic Workflows)</span>
-                    <span>RAG Pipelines</span>
-                    <span>Prompt Engineering</span>
-                    <span>LLM Evaluation</span>
-                    <span>LangChain</span>
-                    <span>LangGraph Concepts</span>
-                    <span>Explainable AI (XAI)</span>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h4>Languages</h4>
-                <div class="tags">
-                    <span>Python</span>
-                    <span>JavaScript</span>
-                    <span>SQL</span>
-                    <span>HTML/CSS</span>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h4>Web & Backend</h4>
-                <div class="tags">
-                    <span>RESTful APIs</span>
-                    <span>Microservices</span>
-                    <span>JSON</span>
-                    <span>Streamlit</span>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h4>Databases & Infra</h4>
-                <div class="tags">
-                    <span>SQL Databases</span>
-                    <span>Vector DB (ChromaDB)</span>
-                    <span>Docker</span>
-                    <span>Kubernetes (Foundational)</span>
-                    <span>Git/GitHub</span>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h4>APIs</h4>
-                <div class="tags">
-                    <span>OpenAI (Chat, Embeddings)</span>
-                    <span>Azure OpenAI (Chat, Embeddings)</span>
-                </div>
-            </div>
-
+        <div class="stat-item">
+            <div><span class="stat-number" data-target="8">0</span><span class="stat-suffix">+</span></div>
+            <p>Projects Built</p>
         </div>
-    </section>
-
-    <!-- Featured Projects -->
-    <section id="projects">
-        <h3>Featured Research & Projects</h3>
-        <div class="projects-container">
-
-            <div class="project-card">
-                <h4>Explainable AI (XAI) — Concept-Validated Explanation Framework</h4>
-                <p>
-                    Built an advanced evaluation framework measuring <strong>fidelity</strong>, <strong>stability</strong>,
-                    and <strong>causal adherence</strong>. Compared explanation reliability against <strong>SHAP</strong> and <strong>LIME</strong>.
-                    Experience directly transferable to <strong>LLM evaluation</strong> and <strong>safety scoring</strong>.
-                </p>
-                <div class="stack">
-                    <span>Python</span><span>XAI</span><span>SHAP</span><span>LIME</span><span>Research</span>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <h4>COVID-19 Analytics Dashboard</h4>
-                <p>
-                    Built interactive dashboards using <strong>Plotly</strong> and <strong>Dash</strong> to monitor trends and predictive signals.
-                    Aligns with modern <strong>AI observability</strong> and reliability dashboards.
-                </p>
-                <div class="stack">
-                    <span>Plotly</span><span>Dash</span><span>Data Viz</span>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <h4>"NEST" AI Grocery Assistant (Innovation)</h4>
-                <p>
-                    Runner-Up at <strong>CEO BIG BOOST BAR</strong> for pitching “NEST,” an AI-powered grocery assistant.
-                    Demonstrated strong product thinking, pitching, and applied consumer AI innovation.
-                </p>
-                <div class="stack">
-                    <span>AI Product</span><span>Pitching</span><span>Innovation</span>
-                </div>
-            </div>
-
+        <div class="stat-item">
+            <div><span class="stat-number" data-target="3">0</span><span class="stat-suffix"></span></div>
+            <p>Certifications</p>
         </div>
-    </section>
+        <div class="stat-item">
+            <div><span class="stat-number" data-target="1">0</span><span class="stat-suffix"></span></div>
+            <p>Award Won</p>
+        </div>
+    </div>
+</div>
 
-    <!-- Credentials -->
-    <section id="credentials">
-        <h3>Credentials</h3>
-
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h4>Education</h4>
-                <div class="tags">
-                    <span>UNCG — M.S. Computer Science</span>
-                    <span>Aug 2024 – May 2026</span>
-                    <span>GPA: 3.47</span>
-                    <span>Focus: AI, Big Data & ML, Deep Learning</span>
+<!-- ABOUT -->
+<section id="about">
+    <h3>About Me</h3>
+    <div class="about-grid">
+        <div class="about-text reveal">
+            <p>I'm an <span class="accent">AI Engineer & Graduate Researcher</span> at UNC Greensboro, currently designing enterprise-grade GenAI systems at <strong>Volvo Financial Services</strong> using <strong>Microsoft Azure AI Foundry</strong>. My work centers on RAG pipelines with guardrails, observability layers, and evaluation metrics that reduce hallucinations and improve reliability.</p>
+            <p>My research focuses on <span class="accent">Explainable AI (XAI)</span> — specifically a Concept-Validated Explanation Framework (CVXF) that benchmarks explanation fidelity, stability, and causal adherence against SHAP and LIME. I believe AI should be powerful <em>and</em> interpretable.</p>
+            <p>Outside of work, I placed <strong>Runner-Up at the CEO BIG BOOST BAR</strong> pitching "NEST," an AI-powered grocery assistant — demonstrating both technical depth and real product thinking.</p>
+            <div class="tech-stack">
+                <span>Python</span><span>Azure AI Foundry</span><span>LangChain</span>
+                <span>SHAP / LIME</span><span>Plotly / Dash</span><span>SQL</span>
+                <span>Scikit-learn</span><span>TensorFlow</span><span>Git</span>
+            </div>
+        </div>
+        <div class="about-card reveal">
+            <div class="about-highlight">
+                <div class="ah-icon">🏆</div>
+                <div>
+                    <strong>CEO BIG BOOST BAR — Runner-Up</strong>
+                    <p>Pitched NEST, an AI grocery assistant, to investors.</p>
                 </div>
             </div>
-
-            <div class="skill-category">
-                <h4>Certifications</h4>
-                <div class="tags">
-                    <span>Microsoft Azure Foundry: Develop AI Agents on Azure</span>
-                    <span>UiPath: RPA Developer Associate (Diploma)</span>
-                    <span>Microsoft AI Fundamentals: AI & ML</span>
+            <div class="about-highlight">
+                <div class="ah-icon">🎓</div>
+                <div>
+                    <strong>M.S. Computer Science — UNCG</strong>
+                    <p>Focus: ML, Explainable AI &amp; Data Science</p>
                 </div>
             </div>
-
-            <div class="skill-category">
-                <h4>Leadership & Achievements</h4>
-                <div class="tags">
-                    <span>National Youth Day Speaker (Public Speaking)</span>
-                    <span>Promotion Head, CSI Club</span>
-                    <span>Managed $20,000 State-Level Tech Fest</span>
-                    <span>Mentored Student Teams (Execution)</span>
-                    <span>Instructional Areas: GenAI, RAG, Analytics, Python, XAI</span>
+            <div class="about-highlight">
+                <div class="ah-icon">🏢</div>
+                <div>
+                    <strong>AI Engineer @ Volvo Financial Services</strong>
+                    <p>Enterprise GenAI, RAG, LLM Evaluation</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h3>Let's Collaborate</h3>
-        <p class="contact-sub">Interested in discussing RAG architectures or AI Agents? Drop me a message.</p>
-
-        <form id="contact-form">
-            <div class="form-group">
-                <label>Your Name</label>
-                <input type="text" name="user_name" required>
+<!-- SKILLS -->
+<section id="skills">
+    <h3>Skills &amp; Stack</h3>
+    <div class="skills-grid">
+        <div class="skill-category reveal">
+            <div class="skill-icon">🤖</div>
+            <h4>Generative AI &amp; LLMs</h4>
+            <div class="skill-pills">
+                <span>RAG Pipelines</span><span>LLM Evaluation</span><span>Prompt Engineering</span>
+                <span>Agentic Workflows</span><span>Azure AI Foundry</span><span>LangChain</span><span>Guardrails</span>
             </div>
-
-            <div class="form-group">
-                <label>Your Email</label>
-                <input type="email" name="user_email" required>
+        </div>
+        <div class="skill-category reveal">
+            <div class="skill-icon">🔬</div>
+            <h4>ML Research &amp; XAI</h4>
+            <div class="skill-pills">
+                <span>Explainable AI</span><span>SHAP</span><span>LIME</span>
+                <span>CVXF Framework</span><span>Model Evaluation</span><span>Scikit-learn</span><span>TensorFlow</span>
             </div>
-
-            <div class="form-group">
-                <label>Subject</label>
-                <input type="text" name="subject" placeholder="Job / Collaboration / Speaking / Project" required>
+        </div>
+        <div class="skill-category reveal">
+            <div class="skill-icon">📊</div>
+            <h4>Data &amp; Analytics</h4>
+            <div class="skill-pills">
+                <span>Python</span><span>Pandas / NumPy</span><span>Plotly</span>
+                <span>Dash</span><span>SQL</span><span>Power BI / DAX</span><span>Data Visualization</span>
             </div>
-
-            <div class="form-group">
-                <label>Message</label>
-                <textarea name="message" required></textarea>
+        </div>
+        <div class="skill-category reveal">
+            <div class="skill-icon">☁️</div>
+            <h4>Cloud &amp; DevOps</h4>
+            <div class="skill-pills">
+                <span>Microsoft Azure</span><span>AI Foundry</span><span>Git / GitHub</span>
+                <span>REST APIs</span><span>UiPath RPA</span><span>Jupyter</span>
             </div>
+        </div>
+    </div>
+</section>
 
-            <button type="submit" class="btn">Send Message</button>
+<!-- PROJECTS -->
+<section id="projects">
+    <h3>Featured Projects</h3>
+    <div class="projects-container">
+        <div class="project-card featured reveal">
+            <div class="project-top">
+                <div class="project-folder">📁</div>
+                <div class="project-links">
+                    <a href="https://github.com/YOUR_HANDLE" target="_blank" title="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    </a>
+                </div>
+            </div>
+            <h4>Concept-Validated Explanation Framework (CVXF)</h4>
+            <p>Advanced XAI evaluation framework measuring <strong>fidelity</strong>, <strong>stability</strong>, and <strong>causal adherence</strong> of ML model explanations — benchmarked against SHAP and LIME. Directly transferable to LLM safety scoring and AI evaluation pipelines.</p>
+            <div class="tags"><span>Python</span><span>SHAP</span><span>LIME</span><span>Scikit-learn</span><span>XAI Research</span></div>
+        </div>
 
-            <p style="margin-top:10px; opacity:0.85;">
-                Or email directly: <a href="mailto:saibommepalli@gmail.com">saibommepalli@gmail.com</a>
-            </p>
-        </form>
-    </section>
+        <div class="project-card reveal">
+            <div class="project-top">
+                <div class="project-folder">📁</div>
+                <div class="project-links">
+                    <a href="https://github.com/YOUR_HANDLE" target="_blank" title="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+                </div>
+            </div>
+            <h4>Enterprise RAG Pipeline @ Volvo FS</h4>
+            <p>Designed and deployed an enterprise-grade RAG system using <strong>Azure AI Foundry</strong> with LLM guardrails, observability layers, and automated evaluation metrics. Significantly reduced hallucination rates in live financial workflows.</p>
+            <div class="tags"><span>Azure AI</span><span>RAG</span><span>LangChain</span><span>LLM Eval</span><span>GenAI</span></div>
+        </div>
 
-    <footer>
-        <p>Built by Sai Surya Teja Reddy Bommepalli. &copy; 2026.</p>
-    </footer>
+        <div class="project-card reveal">
+            <div class="project-top">
+                <div class="project-folder">📁</div>
+                <div class="project-links">
+                    <a href="https://github.com/YOUR_HANDLE" target="_blank" title="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+                    <a href="#" target="_blank" title="Live Demo" style="font-size:1.1rem;font-weight:700;">↗</a>
+                </div>
+            </div>
+            <h4>COVID-19 Analytics Dashboard</h4>
+            <p>Built an interactive analytics dashboard tracking COVID-19 trends, predictive signals, and global spread using <strong>Plotly</strong> and <strong>Dash</strong>. A showcase of AI observability and data storytelling skills.</p>
+            <div class="tags"><span>Python</span><span>Plotly</span><span>Dash</span><span>Data Viz</span></div>
+        </div>
 
-    <script src="script.js"></script>
+        <div class="project-card reveal">
+            <div class="project-top">
+                <div class="project-folder">📁</div>
+                <div class="project-links">
+                    <a href="https://github.com/YOUR_HANDLE" target="_blank" title="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+                </div>
+            </div>
+            <h4>NEST — AI Grocery Assistant</h4>
+            <p>Pitched a consumer AI product to investors at the CEO BIG BOOST BAR competition, earning <strong>Runner-Up</strong>. NEST personalizes shopping lists and reduces food waste using LLM-based recommendations.</p>
+            <div class="tags"><span>GenAI</span><span>LLMs</span><span>Product Design</span><span>Consumer AI</span></div>
+        </div>
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+    <h3>Experience</h3>
+    <div class="timeline">
+        <div class="timeline-item reveal">
+            <span class="timeline-date">2024 — Present</span>
+            <div class="timeline-content">
+                <h4>AI Engineer <span class="company-badge">@ Volvo Financial Services</span></h4>
+                <span class="company">Greensboro, NC</span>
+                <ul class="exp-list">
+                    <li>Design and deploy enterprise RAG pipelines using Microsoft Azure AI Foundry</li>
+                    <li>Implement LLM guardrails, observability layers, and automated evaluation metrics</li>
+                    <li>Reduce hallucination rates through systematic pipeline testing and grounding strategies</li>
+                    <li>Build agentic AI workflows for financial document processing and Q&A automation</li>
+                </ul>
+                <div class="tags"><span>Azure AI</span><span>RAG</span><span>LangChain</span><span>GenAI</span></div>
+            </div>
+        </div>
+        <div class="timeline-item reveal">
+            <span class="timeline-date">2023 — Present</span>
+            <div class="timeline-content">
+                <h4>Graduate Researcher <span class="company-badge">@ UNCG</span></h4>
+                <span class="company">UNC Greensboro — M.S. Computer Science</span>
+                <ul class="exp-list">
+                    <li>Built the Concept-Validated Explanation Framework (CVXF) for ML interpretability</li>
+                    <li>Benchmarked explanation fidelity, stability, and causal adherence against SHAP and LIME</li>
+                    <li>Research directly applicable to LLM safety scoring and AI evaluation pipelines</li>
+                </ul>
+                <div class="tags"><span>XAI</span><span>SHAP</span><span>LIME</span><span>Python</span><span>Research</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+    <h3>Certifications</h3>
+    <div class="certs-grid">
+        <div class="cert-card reveal">
+            <div class="cert-logo">☁️</div>
+            <div class="cert-info">
+                <h4>Azure AI Foundry — AI Agents</h4>
+                <p>Microsoft</p>
+                <span class="cert-badge">✓ Verified</span>
+            </div>
+        </div>
+        <div class="cert-card reveal">
+            <div class="cert-logo">🧠</div>
+            <div class="cert-info">
+                <h4>AI-900: Azure AI Fundamentals</h4>
+                <p>Microsoft</p>
+                <span class="cert-badge">✓ Verified</span>
+            </div>
+        </div>
+        <div class="cert-card reveal">
+            <div class="cert-logo">🤖</div>
+            <div class="cert-info">
+                <h4>RPA Developer Associate</h4>
+                <p>UiPath</p>
+                <span class="cert-badge">✓ Verified</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h3>Get In Touch</h3>
+    <p class="contact-intro">I'm actively looking for AI/ML engineering roles. Whether you have a question, a project, or just want to talk AI — my inbox is always open.</p>
+    <form id="contact-form">
+        <div class="form-group">
+            <label for="user_name">Name</label>
+            <input type="text" id="user_name" name="user_name" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+            <label for="user_email">Email</label>
+            <input type="email" id="user_email" name="user_email" placeholder="your@email.com" required />
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message →</button>
+    </form>
+    <p style="text-align:center; margin-top: 20px; color: var(--text-secondary); font-size: 0.9rem;">
+        Or email directly: <a href="mailto:your@email.com">your@email.com</a>
+    </p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>Designed &amp; Built by <span class="accent">Sai Surya Teja</span> &bull; 2025</p>
+    <p style="font-size:0.8rem; color: var(--text-secondary); margin-top: 8px;">HTML · CSS · JavaScript</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
-
